@@ -1,0 +1,23 @@
+.logo{
+    height: 120px;
+    width: 120px;
+}
+
+.row{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: underline;
+    color: rgba(0,0,0,.8);
+}
+
+@media(max-width: 991px){
+    .card{
+        margin-bottom: 25px;
+    }
+}

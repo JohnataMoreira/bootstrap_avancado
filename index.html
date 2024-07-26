@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-secondary">
+    <header class="bg-dark">
+        <div class="nav navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col">
+                        <img class="logo py-2" src="./imagens/logo.png" alt="logo">
+                    </div>
+                    <div class="col text-white lead">
+                        <nav class="nav navbar-collapse">
+                            <ul class="nav navbar-nav ">
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-outline-secondary btn-sm" href="#">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-sm btn-outline-secondary mx-3 " href="#carousel-imagens">Carousel</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-outline-secondary btn-sm" href="#cadastro">Contato</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid mb-5">
+        <h1>Destaques</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header display-4">
+                        Sobre
+                    </header>
+                    <img src="https://via.placeholder.com/100x100" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Primeiro Card</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora sapiente obcaecati nihil alias iste cumque necessitatibus repellat. Numquam cupiditate non facere totam laborum rem similique? Quidem corporis aliquid perferendis!</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="btn btn-secondary">Ir para sessão</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header display-4">
+                        Sobre
+                    </header>
+                    <img src="https://via.placeholder.com/100x100" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Segundo Card</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora sapiente obcaecati nihil alias iste cumque necessitatibus repellat. Numquam cupiditate non facere totam laborum rem similique? Quidem corporis aliquid perferendis!</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="btn btn-secondary">Ir para sessão</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header display-4">
+                        Sobre
+                    </header>
+                    <img src="https://via.placeholder.com/100x100" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Terceiro Card</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora sapiente obcaecati nihil alias iste cumque necessitatibus repellat. Numquam cupiditate non facere totam laborum rem similique? Quidem corporis aliquid perferendis!</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="btn btn-secondary">Ir para sessão</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="carousel-imagens" class="carousel slide carousel-fade p-3" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2024/02/16/20/28/lighthouse-8578318_1280.jpg" class="d-block w-100" alt="California">
+                <div class="carousel-caption">
+                    <h3 class="lead">Farol</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2024/02/27/14/00/chrysanthemum-8600210_1280.jpg" class="d-block w-100" alt="Paris">
+                <div class="carousel-caption">
+                    <h3 class="lead">Flor</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2024/02/04/06/43/ferris-wheel-8551646_1280.jpg" class="d-block w-100" alt="Dublin">
+                <div class="carousel-caption">
+                    <h3 class="lead">Roda Gigante</h3>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-imagens">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel-imagens" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="0" class="active">
+            <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="1">
+            <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="2">
+        </div>
+    </div>
+            <!-- <div class="col-lg-5 p-4 align-self-center">
+                <h1 class="display-4">Realize a viagem do seu sonho</h1>
+                <p class="lead">O melhor local para vijar é com a Caravan, mais de 5.000 excursões concluídas.</p>
+                <form action="">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Email" id="cadastro">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Inscreva-se</button>
+                        </span>
+                    </div>
+                </form>
+            </div> -->
+    <footer class="p-3 text-center">
+        <p class="lead">&copy <a href="https://www.instagram.com/johnatavinicius/" target="_blank">Johnata Moreira</a> - Todos os direitos reservados 2024</p>
+    </footer>
+
+    <script src="./css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
